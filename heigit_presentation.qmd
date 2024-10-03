@@ -55,6 +55,7 @@ Analysis based on **graph theory**, where roads are modeled as **vertices** and 
 
 <iframe width="900" height="600" src="/media/osm_ors.html" title = "Origin and destination used and network" data-external="1"></iframe>
 ```
+
 ## Edge Betweenness
 
 ::::{.columns} 
@@ -66,6 +67,11 @@ Analysis based on **graph theory**, where roads are modeled as **vertices** and 
 
 :::{.column width="20%"}
 
+Significance of the road counting shortest paths
+
+$$
+c_{B}(v) = \sum_{\substack{s \neq t \neq v \\ s,t \in V}} \frac{\sigma(s,t|v)}{\sigma(s,t)}
+$$
 
 :::
 ::::
