@@ -28,17 +28,113 @@ format:
 
 ```{=html}
 
-<iframe width="960" height="500" src="/media/hot_intro.html" title = "Sum Edge Betweenness in the Urban Settlement located in Porto Alegre" data-external="1"></iframe>
+<iframe width="900" height="600" src="/media/hot_intro.html" title = "Sum Edge Betweenness in the Urban Settlement located in Porto Alegre" data-external="1"></iframe>
 ```
-
-## Impact
 
 ## Research questions
 
+::: {.incremental}
+
+Analysis based on **graph theory**, where roads are modeled as **vertices** and **edges**. 
+
+1. How does road connectivity change after being impacted by flooding based on connectivity metrics?
+2. Which healthcare facilities will be most affected by flooding based on accessibility metrics?
+3. Where are the most critical infrastructures located for accessing health facilities to reinforce urban resilience against flooding?
+
+:::
+
 # Methodology
 
+- Data
+- Edge Betweenness
+- Closeness
+
+## Data
+
+```{=html}
+
+<iframe width="900" height="600" src="/media/osm_ors.html" title = "Origin and destination used and network" data-external="1"></iframe>
+```
+## Edge Betweenness
+
+::::{.columns} 
+
+:::{.column width="80%"}
+
+![](/images/laura_map.png)
+:::
+
+:::{.column width="20%"}
+
+
+:::
+::::
+
+## Closeness
+
+::::{.columns} 
+
+:::{.column width="80%"}
+
+![](/images/laura_map.png)
+:::
+
+:::{.column width="20%"}
+
+How central to other vertices is a vertex
+
+$$
+\text{CN}(v) = \frac{n - 1}{\sum_{w = 1}^{n - 1} d(w, v)}
+$$
+
+:::
+::::
+
+
+
 # Results
+## Origin-Destination
+Origin and destination based on density of buildings
+
+```{=html}
+
+<iframe width="900" height="600" src="/media/map_sampling_example_v0.html" title = "Origin and destination used and network" data-external="1"></iframe>
+```
+
+## RQ 1: Network centrality
+Changes on the centrality before and after the flooding
+
+```{=html}
+<iframe width="900" height="600" src="/media/centrality_map_results.html" title = "Origin and destination used and network" data-external="1"></iframe>
+```
+
+## RQ 1: Network centrality
+Distribution of the centrality in the network
+
+![](/images/centrality_distribution.png){.lightbox}
+
+## RQ 1: Network centrality
+Table with highest connectivity roads
+
+```{=html}
+<iframe width="900" height="600" src="/media/centrality_table_results.html" title = "Origin and destination used and network" data-external="1"></iframe>
+```
+
+## RQ 2: Hospital centrality - map
+
+## RQ 2: Hospital centrality - ranking
 
 # Conclussion
 
+# Future work{.smaller}
+1. Could changes in road centrality be used as an indicator of regional vulnerability in floodings?
+2. Could the weighted sampling method based on built-up density be a reliable indicator for modeling people's movement during the flooding event? Would you use other approach to select the points of origin?
+3. Would you have considered using other points of interest, such as schools,emergency shelters, bus stops alongside hospitals in the analysis?
+4. Do you believe mapping socioeconomic vulnerabilities by neighborhood, alongside these centrality metrics, could help to identify the most important roads in case of flooding?
+5. Do you have other ideas for this centrality analysis or other data that could add more value?
+
 # Future work
+
+[Google survey:](https://forms.gle/rzhhmuX9BezV6bZB6)
+
+![](/images/frame.png)

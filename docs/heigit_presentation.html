@@ -353,34 +353,112 @@ Ricardo Ruiz Sánchez
 <section id="flooding" class="slide level2">
 <h2>Flooding</h2>
 
-<iframe width="960" height="500" src="./media/hot_intro.html" title="Sum Edge Betweenness in the Urban Settlement located in Porto Alegre" data-external="1"></iframe>
-</section>
-<section id="impact" class="slide level2">
-<h2>Impact</h2>
+<iframe width="900" height="600" src="./media/hot_intro.html" title="Sum Edge Betweenness in the Urban Settlement located in Porto Alegre" data-external="1"></iframe>
 </section>
 <section id="research-questions" class="slide level2">
 <h2>Research questions</h2>
+<div>
+<p>Analysis based on <strong>graph theory</strong>, where roads are modeled as <strong>vertices</strong> and <strong>edges</strong>.</p>
+<ol type="1">
+<li class="fragment">How does road connectivity change after being impacted by flooding based on connectivity metrics?</li>
+<li class="fragment">Which healthcare facilities will be most affected by flooding based on accessibility metrics?</li>
+<li class="fragment">Where are the most critical infrastructures located for accessing health facilities to reinforce urban resilience against flooding?</li>
+</ol>
+</div>
 </section></section>
+<section>
 <section id="methodology" class="title-slide slide level1 center">
 <h1>Methodology</h1>
-
+<ul>
+<li>Data</li>
+<li>Edge Betweenness</li>
+<li>Closeness</li>
+</ul>
 </section>
+<section id="data" class="slide level2">
+<h2>Data</h2>
 
+<iframe width="900" height="600" src="./media/osm_ors.html" title="Origin and destination used and network" data-external="1"></iframe>
+</section>
+<section id="edge-betweenness" class="slide level2">
+<h2>Edge Betweenness</h2>
+<div class="columns">
+<div class="column" style="width:80%;">
+<p><img data-src="./images/laura_map.png"></p>
+</div><div class="column" style="width:20%;">
+
+</div>
+</div>
+</section>
+<section id="closeness" class="slide level2">
+<h2>Closeness</h2>
+<div class="columns">
+<div class="column" style="width:80%;">
+<p><img data-src="./images/laura_map.png"></p>
+</div><div class="column" style="width:20%;">
+<p>How central to other vertices is a vertex</p>
+<p><span class="math display">\[
+\text{CN}(v) = \frac{n - 1}{\sum_{w = 1}^{n - 1} d(w, v)}
+\]</span></p>
+</div>
+</div>
+</section></section>
+<section>
 <section id="results" class="title-slide slide level1 center">
 <h1>Results</h1>
 
 </section>
+<section id="origin-destination" class="slide level2">
+<h2>Origin-Destination</h2>
+<p>Origin and destination based on density of buildings</p>
 
+<iframe width="900" height="600" src="./media/map_sampling_example_v0.html" title="Origin and destination used and network" data-external="1"></iframe>
+</section>
+<section id="rq-1-network-centrality" class="slide level2">
+<h2>RQ 1: Network centrality</h2>
+<p>Changes on the centrality before and after the flooding</p>
+<iframe width="900" height="600" src="./media/centrality_map_results.html" title="Origin and destination used and network" data-external="1"></iframe>
+</section>
+<section id="rq-1-network-centrality-1" class="slide level2">
+<h2>RQ 1: Network centrality</h2>
+<p>Distribution of the centrality in the network</p>
+
+<img data-src="./images/centrality_distribution.png" class="lightbox r-stretch"></section>
+<section id="rq-1-network-centrality-2" class="slide level2">
+<h2>RQ 1: Network centrality</h2>
+<p>Table with highest connectivity roads</p>
+
+<iframe width="900" height="600" src="./media/centrality_table_results.html" title="Origin and destination used and network" data-external="1"></iframe>
+</section>
+<section id="rq-2-hospital-centrality---map" class="slide level2">
+<h2>RQ 2: Hospital centrality - map</h2>
+</section>
+<section id="rq-2-hospital-centrality---ranking" class="slide level2">
+<h2>RQ 2: Hospital centrality - ranking</h2>
+</section></section>
 <section id="conclussion" class="title-slide slide level1 center">
 <h1>Conclussion</h1>
 
 </section>
 
-<section id="future-work" class="title-slide slide level1 center">
+<section id="future-work" class="title-slide slide level1 smaller center">
 <h1>Future work</h1>
+<ol type="1">
+<li>Could changes in road centrality be used as an indicator of regional vulnerability in floodings?</li>
+<li>Could the weighted sampling method based on built-up density be a reliable indicator for modeling people’s movement during the flooding event? Would you use other approach to select the points of origin?</li>
+<li>Would you have considered using other points of interest, such as schools,emergency shelters, bus stops alongside hospitals in the analysis?</li>
+<li>Do you believe mapping socioeconomic vulnerabilities by neighborhood, alongside these centrality metrics, could help to identify the most important roads in case of flooding?</li>
+<li>Do you have other ideas for this centrality analysis or other data that could add more value?</li>
+</ol>
+</section>
 
+<section id="future-work-1" class="title-slide slide level1 center">
+<h1>Future work</h1>
+<p><a href="https://forms.gle/rzhhmuX9BezV6bZB6">Google survey:</a></p>
+<p><img data-src="./images/frame.png"></p>
 
-<img src="images/heigit_gima.png" class="slide-logo r-stretch"><div class="footer footer-default">
+<p><img src="images/heigit_gima.png" class="slide-logo"></p>
+<div class="footer footer-default">
 <p>Master student from <a href="https://www.uu.nl/en/masters/geographical-information-management-and-applications-gima">GIMA</a> &amp; Intern in the Geoinformation for humanitarian aid at <a href="https://heigit.org/geoinformation-for-humanitarian-aid/">HeiGIT</a>. <br> Code of the presentation available in <a href="https://rruiz-s.github.io/heigit_presentation/heigit_presentation.html#/title-slide">GitHub</a>.</p>
 </div>
 </section>

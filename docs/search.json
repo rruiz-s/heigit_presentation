@@ -7,17 +7,73 @@
     "text": "Flooding"
   },
   {
-    "objectID": "heigit_presentation.html#impact",
-    "href": "heigit_presentation.html#impact",
-    "title": "Network Centrality and Resilience to Flood Disasters",
-    "section": "Impact",
-    "text": "Impact"
-  },
-  {
     "objectID": "heigit_presentation.html#research-questions",
     "href": "heigit_presentation.html#research-questions",
     "title": "Network Centrality and Resilience to Flood Disasters",
     "section": "Research questions",
-    "text": "Research questions"
+    "text": "Research questions\n\nAnalysis based on graph theory, where roads are modeled as vertices and edges.\n\nHow does road connectivity change after being impacted by flooding based on connectivity metrics?\nWhich healthcare facilities will be most affected by flooding based on accessibility metrics?\nWhere are the most critical infrastructures located for accessing health facilities to reinforce urban resilience against flooding?"
+  },
+  {
+    "objectID": "heigit_presentation.html#data",
+    "href": "heigit_presentation.html#data",
+    "title": "Network Centrality and Resilience to Flood Disasters",
+    "section": "Data",
+    "text": "Data"
+  },
+  {
+    "objectID": "heigit_presentation.html#edge-betweenness",
+    "href": "heigit_presentation.html#edge-betweenness",
+    "title": "Network Centrality and Resilience to Flood Disasters",
+    "section": "Edge Betweenness",
+    "text": "Edge Betweenness"
+  },
+  {
+    "objectID": "heigit_presentation.html#closeness",
+    "href": "heigit_presentation.html#closeness",
+    "title": "Network Centrality and Resilience to Flood Disasters",
+    "section": "Closeness",
+    "text": "Closeness\n\n\n\n\nHow central to other vertices is a vertex\n\\[\n\\text{CN}(v) = \\frac{n - 1}{\\sum_{w = 1}^{n - 1} d(w, v)}\n\\]"
+  },
+  {
+    "objectID": "heigit_presentation.html#origin-destination",
+    "href": "heigit_presentation.html#origin-destination",
+    "title": "Network Centrality and Resilience to Flood Disasters",
+    "section": "Origin-Destination",
+    "text": "Origin-Destination\nOrigin and destination based on density of buildings"
+  },
+  {
+    "objectID": "heigit_presentation.html#rq-1-network-centrality",
+    "href": "heigit_presentation.html#rq-1-network-centrality",
+    "title": "Network Centrality and Resilience to Flood Disasters",
+    "section": "RQ 1: Network centrality",
+    "text": "RQ 1: Network centrality\nChanges on the centrality before and after the flooding"
+  },
+  {
+    "objectID": "heigit_presentation.html#rq-1-network-centrality-1",
+    "href": "heigit_presentation.html#rq-1-network-centrality-1",
+    "title": "Network Centrality and Resilience to Flood Disasters",
+    "section": "RQ 1: Network centrality",
+    "text": "RQ 1: Network centrality\nDistribution of the centrality in the network"
+  },
+  {
+    "objectID": "heigit_presentation.html#rq-1-network-centrality-2",
+    "href": "heigit_presentation.html#rq-1-network-centrality-2",
+    "title": "Network Centrality and Resilience to Flood Disasters",
+    "section": "RQ 1: Network centrality",
+    "text": "RQ 1: Network centrality\nTable with highest connectivity roads"
+  },
+  {
+    "objectID": "heigit_presentation.html#rq-2-hospital-centrality---map",
+    "href": "heigit_presentation.html#rq-2-hospital-centrality---map",
+    "title": "Network Centrality and Resilience to Flood Disasters",
+    "section": "RQ 2: Hospital centrality - map",
+    "text": "RQ 2: Hospital centrality - map"
+  },
+  {
+    "objectID": "heigit_presentation.html#rq-2-hospital-centrality---ranking",
+    "href": "heigit_presentation.html#rq-2-hospital-centrality---ranking",
+    "title": "Network Centrality and Resilience to Flood Disasters",
+    "section": "RQ 2: Hospital centrality - ranking",
+    "text": "RQ 2: Hospital centrality - ranking"
   }
 ]
