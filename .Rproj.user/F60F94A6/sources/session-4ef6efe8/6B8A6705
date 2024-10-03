@@ -1,0 +1,26 @@
+{
+    "id": "6B8A6705",
+    "path": "~/gobernanza_ambiental/leaflet.R",
+    "project_path": null,
+    "type": "r_source",
+    "hash": "0",
+    "contents": "",
+    "dirty": false,
+    "created": 1727966019124.0,
+    "source_on_save": false,
+    "relative_order": 4,
+    "properties": {
+        "source_window_id": "",
+        "Source": "Source",
+        "cursorPosition": "69,69",
+        "scrollLine": "54"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1727966019,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1727966019707,
+    "read_only": false,
+    "read_only_alternatives": []
+}
