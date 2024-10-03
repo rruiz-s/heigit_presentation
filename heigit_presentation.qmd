@@ -123,6 +123,9 @@ Table with highest connectivity roads
 ## RQ 2: Hospital centrality - map
 
 ## RQ 2: Hospital centrality - ranking
+```{=html}
+<iframe width="900" height="600" src="/media/betweennes_pre_post_table.html" title = "Origin and destination used and network" data-external="1"></iframe>
+```
 
 # Conclussion
 
