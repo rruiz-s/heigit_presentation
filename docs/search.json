@@ -25,7 +25,7 @@
     "href": "heigit_presentation.html#edge-betweenness",
     "title": "Network Centrality and Resilience to Flood Disasters",
     "section": "Edge Betweenness",
-    "text": "Edge Betweenness"
+    "text": "Edge Betweenness\n\n\n\n\nSignificance of the road counting shortest paths\n\\[\nc_{B}(v) = \\sum_{\\substack{s \\neq t \\neq v \\\\ s,t \\in V}} \\frac{\\sigma(s,t|v)}{\\sigma(s,t)}\n\\]"
   },
   {
     "objectID": "heigit_presentation.html#closeness",
