@@ -12,7 +12,7 @@ format:
     incremental: false
     theme: [default, custom.scss]
     toc-depth: 2
-    logo: images/g111166.png
+    logo: images/g11d1166.png
     slide-number: true
     footer: "Master student from [GIMA](https://www.uu.nl/en/masters/geographical-information-management-and-applications-gima) &  Intern in the Geoinformation for humanitarian aid at [HeiGIT](https://heigit.org/geoinformation-for-humanitarian-aid/).  <br> Code  of the presentation available in [GitHub](https://rruiz-s.github.io/heigit_presentation/heigit_presentation.html#/title-slide)."
     progress: true
