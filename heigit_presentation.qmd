@@ -1,7 +1,7 @@
 ---
 title: "Network Centrality and Resilience to Flood Disasters"
 subtitle: "A Case Study in Rio Grande do Sul"
-date: "2024-10-03"
+date: "2024-10-09"
 date-format: long
 author: "Ricardo Ruiz Sánchez"
 institute: "HeiGIT & ITC Enschede (GIMA)"
@@ -24,123 +24,208 @@ format:
 
 # Introduction
 
+## Presentation {.nostretch}
+
+::: columns
+
+::: {.column width="50%"}
+
+HeiGIT: Marcel Reinmuth
+![](images/marcel.png){height=50% .fragment}
+:::
+
+::: {.column width="50%" .fragment}
+
+GIMA-Entschede: Monika kuffer
+![](images/monika.png){ height =50% .fragment}
+:::
+:::
+
+::: {.notes}
+Speaker notes go here.
+:::
+
 ## Flooding
+
+::: columns
+
+::: {.column width="50%"}
+![Flooded areas of Porto Alegre and the Metropolitan Region 14 May 2024. Credit: Mauricio Tonetto / Secom](images/copernicus_freeway.jpg){.fragment}
+:::
+
+::: {.column width="50%" .fragment}
+
+![](images/buildings.png){.fragment}
+
+:::
+:::
+
+::: {.notes}
+Speaker notes go here.
+:::
+
+## Exposed area
 
 ```{=html}
 
 <iframe width="900" height="600" src="/media/hot_intro.html" title = "Sum Edge Betweenness in the Urban Settlement located in Porto Alegre" data-external="1"></iframe>
 ```
 
+##  Graph theory
+
+From OSM geometric to ORS graph
+
+```{=html}
+<iframe width="900" height="600" src="/media/osm_ors.html" title = "Origin and destination used and network" data-external="1"></iframe>
+```
+
+::: {.notes}
+Speaker notes go here.
+:::
+
+## Conceptual design
+
+![](images/framework_heigit.png)
+
 ## Research questions
 
-::: {.incremental}
+::: incremental
+Analysis based on **graph theory**, where roads are modeled as **vertices** and **edges**.
 
-Analysis based on **graph theory**, where roads are modeled as **vertices** and **edges**. 
-
-1. How does road connectivity change after being impacted by flooding based on connectivity metrics?
-2. Which healthcare facilities will be most affected by flooding based on accessibility metrics?
-3. Where are the most critical infrastructures located for accessing health facilities to reinforce urban resilience against flooding?
-
+1.  How does road connectivity change after being impacted by flooding based on connectivity metrics?
+2.  Which healthcare facilities will be most affected by flooding based on accessibility metrics?
+3.  Where are the most critical infrastructures located for accessing health facilities to reinforce urban resilience against flooding?
 :::
 
 # Methodology
 
-- Data
-- Edge Betweenness
-- Closeness
+-   Data
+-   Edge Betweenness
+-   Closeness
 
 ## Data
 
+::: columns
+::: {.column width="80%"}
+
 ```{=html}
 
-<iframe width="900" height="600" src="/media/osm_ors.html" title = "Origin and destination used and network" data-external="1"></iframe>
+<iframe width="900" height="600" src="/media/presentation_od_matrix.html" title = "Origin and destination used and network" data-external="1"></iframe>
 ```
 
-## Edge Betweenness
-
-::::{.columns} 
-
-:::{.column width="80%"}
-
-![](/images/laura_map.png)
 :::
 
-:::{.column width="20%"}
+::: {.column width="20%" .fragment}
+
+![](images/ufrgs.png){.fragment}
+
+![](images/ghs_data.png){.fragment}
+
+![](images/openroute_service_icon.png){.fragment}
+
+![](images/iede-rs.png){.fragment}
+
+:::
+:::
+
+## Technical design
+
+:::{.columns}
+::: {.column width="80%"}
+
+![](/images/workflow_methodology.png)
+:::
+
+::: {.column width="20%"}
+
+![](/images/pgrouting_logo.png){.fragment}
+
+![](/images/postgis_icon.png){.fragment width="50%"}
+
+![](/images/osm_logo.png){.fragment}
+
+:::
+
+:::
+## Edge Betweenness
+
+::: columns
+
+::: {.column width="80%"}
+
+![](/images/laura_map.png)
+
+:::
+
+::: {.column width="20%"}
 
 Significance of the road counting shortest paths
 
 $$
 c_{B}(v) = \sum_{\substack{s \neq t \neq v \\ s,t \in V}} \frac{\sigma(s,t|v)}{\sigma(s,t)}
 $$
+:::
 
 :::
-::::
 
 ## Closeness
 
-::::{.columns} 
-
-:::{.column width="80%"}
-
+::: columns
+::: {.column width="80%"}
 ![](/images/laura_map.png)
 :::
 
-:::{.column width="20%"}
-
+::: {.column width="20%"}
 How central to other vertices is a vertex
 
 $$
 \text{CN}(v) = \frac{n - 1}{\sum_{w = 1}^{n - 1} d(w, v)}
 $$
-
 :::
-::::
+:::
+
+# Preliminary Results
 
 
+## RQ 1: Network centrality distribution
 
-# Results
-## Origin-Destination
-Origin and destination based on density of buildings
+![](/images/flow_results.png){.lightbox}
 
-```{=html}
+## Network centrality location
 
-<iframe width="900" height="600" src="/media/map_sampling_example_v0.html" title = "Origin and destination used and network" data-external="1"></iframe>
-```
-
-## RQ 1: Network centrality
 Changes on the centrality before and after the flooding
 
 ```{=html}
-<iframe width="900" height="600" src="/media/centrality_map_results.html" title = "Origin and destination used and network" data-external="1"></iframe>
+<iframe width="900" height="600" src="/media/laura_centrality_draft.html" title = "Origin and destination used and network" data-external="1"></iframe>
 ```
 
-## RQ 1: Network centrality
-Distribution of the centrality in the network
+## RQ 1: Network centrality values
 
-![](/images/centrality_distribution.png){.lightbox}
-
-## RQ 1: Network centrality
 Table with highest connectivity roads
 
 ```{=html}
 <iframe width="900" height="600" src="/media/centrality_table_results.html" title = "Origin and destination used and network" data-external="1"></iframe>
 ```
 
-## RQ 2: Hospital centrality - map
+## RQ1: Hospital centrality - ranking
 
-## RQ 2: Hospital centrality - ranking
 ```{=html}
 <iframe width="900" height="600" src="/media/betweennes_pre_post_table.html" title = "Origin and destination used and network" data-external="1"></iframe>
 ```
 
-# Conclussion
+# Next steps
 
-# Future work{.smaller}
-1. Could changes in road centrality be used as an indicator of regional vulnerability in floodings?
-2. Could the weighted sampling method based on built-up density be a reliable indicator for modeling people's movement during the flooding event? Would you use other approach to select the points of origin?
-3. Would you have considered using other points of interest, such as schools,emergency shelters, bus stops alongside hospitals in the analysis?
-4. Do you believe mapping socioeconomic vulnerabilities by neighborhood, alongside these centrality metrics, could help to identify the most important roads in case of flooding?
-5. Do you have other ideas for this centrality analysis or other data that could add more value?
+- Gather additional information
+- Include vulnerability criteria 
+- Include resilience criteria
+
+# Discussion {.smaller}
+
+1. Could changes in road centrality indicate regional vulnerability to flooding?
+2. Is weighted sampling based on built-up density a reliable method for modeling people's movement during floods? Would you choose a different approach for origin points?
+3. Would you include other points of interest, like schools, shelters, or bus stops, alongside hospitals?
+4. Could mapping socioeconomic vulnerabilities by neighborhood alongside centrality metrics help identify key roads during floods?
+5. Any suggestions for improving this centrality analysis or additional data to enhance the study?
 
 # Future work
 

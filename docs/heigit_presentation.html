@@ -11,7 +11,7 @@
   <meta name="generator" content="quarto-1.3.353">
 
   <meta name="author" content="Ricardo Ruiz Sánchez">
-  <meta name="dcterms.date" content="2024-10-03">
+  <meta name="dcterms.date" content="2024-10-09">
   <title>Network Centrality and Resilience to Flood Disasters</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -343,18 +343,91 @@ Ricardo Ruiz Sánchez
     </div>
 </div>
 
-  <p class="date">October 3, 2024</p>
+  <p class="date">October 9, 2024</p>
 </section>
 <section>
 <section id="introduction" class="title-slide slide level1 center">
 <h1>Introduction</h1>
 
 </section>
+<section id="presentation" class="slide level2 nostretch">
+<h2>Presentation</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p>HeiGIT: Marcel Reinmuth <img data-src="images/marcel.png" class="fragment" style="height:50.0%"></p>
+</div><div class="column fragment" style="width:50%;">
+<p>GIMA-Entschede: Monika kuffer <img data-src="images/monika.png">{ height =50% .fragment}</p>
+</div>
+</div>
+<aside class="notes">
+<p>Speaker notes go here.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
 <section id="flooding" class="slide level2">
 <h2>Flooding</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/copernicus_freeway.jpg" class="fragment"></p>
+<figcaption>Flooded areas of Porto Alegre and the Metropolitan Region 14 May 2024. Credit: Mauricio Tonetto / Secom</figcaption>
+</figure>
+</div>
+</div><div class="column fragment" style="width:50%;">
+<p><img data-src="images/buildings.png" class="fragment"></p>
+</div>
+</div>
+<aside class="notes">
+<p>Speaker notes go here.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="exposed-area" class="slide level2">
+<h2>Exposed area</h2>
 
 <iframe width="900" height="600" src="./media/hot_intro.html" title="Sum Edge Betweenness in the Urban Settlement located in Porto Alegre" data-external="1"></iframe>
 </section>
+<section id="graph-theory" class="slide level2">
+<h2>Graph theory</h2>
+<p>From OSM geometric to ORS graph</p>
+<iframe width="900" height="600" src="./media/osm_ors.html" title="Origin and destination used and network" data-external="1"></iframe>
+<aside class="notes">
+<p>Speaker notes go here.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="conceptual-design" class="slide level2">
+<h2>Conceptual design</h2>
+
+<img data-src="images/framework_heigit.png" class="r-stretch"></section>
 <section id="research-questions" class="slide level2">
 <h2>Research questions</h2>
 <div>
@@ -377,8 +450,29 @@ Ricardo Ruiz Sánchez
 </section>
 <section id="data" class="slide level2">
 <h2>Data</h2>
+<div class="columns">
+<div class="column" style="width:80%;">
 
-<iframe width="900" height="600" src="./media/osm_ors.html" title="Origin and destination used and network" data-external="1"></iframe>
+<iframe width="900" height="600" src="./media/presentation_od_matrix.html" title="Origin and destination used and network" data-external="1"></iframe>
+</div><div class="column fragment" style="width:20%;">
+<p><img data-src="images/ufrgs.png" class="fragment"></p>
+<p><img data-src="images/ghs_data.png" class="fragment"></p>
+<p><img data-src="images/openroute_service_icon.png" class="fragment"></p>
+<p><img data-src="images/iede-rs.png" class="fragment"></p>
+</div>
+</div>
+</section>
+<section id="technical-design" class="slide level2">
+<h2>Technical design</h2>
+<div class="columns">
+<div class="column" style="width:80%;">
+<p><img data-src="./images/workflow_methodology.png"></p>
+</div><div class="column" style="width:20%;">
+<p><img data-src="./images/pgrouting_logo.png" class="fragment"></p>
+<p><img data-src="./images/postgis_icon.png" class="fragment" style="width:50.0%"></p>
+<p><img data-src="./images/osm_logo.png" class="fragment"></p>
+</div>
+</div>
 </section>
 <section id="edge-betweenness" class="slide level2">
 <h2>Edge Betweenness</h2>
@@ -407,57 +501,51 @@ c_{B}(v) = \sum_{\substack{s \neq t \neq v \\ s,t \in V}} \frac{\sigma(s,t|v)}{\
 </div>
 </section></section>
 <section>
-<section id="results" class="title-slide slide level1 center">
-<h1>Results</h1>
+<section id="preliminary-results" class="title-slide slide level1 center">
+<h1>Preliminary Results</h1>
 
 </section>
-<section id="origin-destination" class="slide level2">
-<h2>Origin-Destination</h2>
-<p>Origin and destination based on density of buildings</p>
+<section id="rq-1-network-centrality-distribution" class="slide level2">
+<h2>RQ 1: Network centrality distribution</h2>
 
-<iframe width="900" height="600" src="./media/map_sampling_example_v0.html" title="Origin and destination used and network" data-external="1"></iframe>
-</section>
-<section id="rq-1-network-centrality" class="slide level2">
-<h2>RQ 1: Network centrality</h2>
+<img data-src="./images/flow_results.png" class="lightbox r-stretch"></section>
+<section id="network-centrality-location" class="slide level2">
+<h2>Network centrality location</h2>
 <p>Changes on the centrality before and after the flooding</p>
-<iframe width="900" height="600" src="./media/centrality_map_results.html" title="Origin and destination used and network" data-external="1"></iframe>
+<iframe width="900" height="600" src="./media/laura_centrality_draft.html" title="Origin and destination used and network" data-external="1"></iframe>
 </section>
-<section id="rq-1-network-centrality-1" class="slide level2">
-<h2>RQ 1: Network centrality</h2>
-<p>Distribution of the centrality in the network</p>
-
-<img data-src="./images/centrality_distribution.png" class="lightbox r-stretch"></section>
-<section id="rq-1-network-centrality-2" class="slide level2">
-<h2>RQ 1: Network centrality</h2>
+<section id="rq-1-network-centrality-values" class="slide level2">
+<h2>RQ 1: Network centrality values</h2>
 <p>Table with highest connectivity roads</p>
 
 <iframe width="900" height="600" src="./media/centrality_table_results.html" title="Origin and destination used and network" data-external="1"></iframe>
 </section>
-<section id="rq-2-hospital-centrality---map" class="slide level2">
-<h2>RQ 2: Hospital centrality - map</h2>
-</section>
-<section id="rq-2-hospital-centrality---ranking" class="slide level2">
-<h2>RQ 2: Hospital centrality - ranking</h2>
+<section id="rq1-hospital-centrality---ranking" class="slide level2">
+<h2>RQ1: Hospital centrality - ranking</h2>
 
 <iframe width="900" height="600" src="./media/betweennes_pre_post_table.html" title="Origin and destination used and network" data-external="1"></iframe>
 </section></section>
-<section id="conclussion" class="title-slide slide level1 center">
-<h1>Conclussion</h1>
-
+<section id="next-steps" class="title-slide slide level1 center">
+<h1>Next steps</h1>
+<ul>
+<li>Gather additional information</li>
+<li>Include vulnerability criteria</li>
+<li>Include resilience criteria</li>
+</ul>
 </section>
 
-<section id="future-work" class="title-slide slide level1 smaller center">
-<h1>Future work</h1>
+<section id="discussion" class="title-slide slide level1 smaller center">
+<h1>Discussion</h1>
 <ol type="1">
-<li>Could changes in road centrality be used as an indicator of regional vulnerability in floodings?</li>
-<li>Could the weighted sampling method based on built-up density be a reliable indicator for modeling people’s movement during the flooding event? Would you use other approach to select the points of origin?</li>
-<li>Would you have considered using other points of interest, such as schools,emergency shelters, bus stops alongside hospitals in the analysis?</li>
-<li>Do you believe mapping socioeconomic vulnerabilities by neighborhood, alongside these centrality metrics, could help to identify the most important roads in case of flooding?</li>
-<li>Do you have other ideas for this centrality analysis or other data that could add more value?</li>
+<li>Could changes in road centrality indicate regional vulnerability to flooding?</li>
+<li>Is weighted sampling based on built-up density a reliable method for modeling people’s movement during floods? Would you choose a different approach for origin points?</li>
+<li>Would you include other points of interest, like schools, shelters, or bus stops, alongside hospitals?</li>
+<li>Could mapping socioeconomic vulnerabilities by neighborhood alongside centrality metrics help identify key roads during floods?</li>
+<li>Any suggestions for improving this centrality analysis or additional data to enhance the study?</li>
 </ol>
 </section>
 
-<section id="future-work-1" class="title-slide slide level1 center">
+<section id="future-work" class="title-slide slide level1 center">
 <h1>Future work</h1>
 <p><a href="https://forms.gle/rzhhmuX9BezV6bZB6">Google survey:</a></p>
 <p><img data-src="./images/frame.png"></p>

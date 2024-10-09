@@ -1,10 +1,38 @@
 [
   {
+    "objectID": "heigit_presentation.html#presentation",
+    "href": "heigit_presentation.html#presentation",
+    "title": "Network Centrality and Resilience to Flood Disasters",
+    "section": "Presentation",
+    "text": "Presentation\n\n\nHeiGIT: Marcel Reinmuth \n\nGIMA-Entschede: Monika kuffer { height =50% .fragment}\n\n\n\nSpeaker notes go here."
+  },
+  {
     "objectID": "heigit_presentation.html#flooding",
     "href": "heigit_presentation.html#flooding",
     "title": "Network Centrality and Resilience to Flood Disasters",
     "section": "Flooding",
-    "text": "Flooding"
+    "text": "Flooding\n\n\n\n\n\nFlooded areas of Porto Alegre and the Metropolitan Region 14 May 2024. Credit: Mauricio Tonetto / Secom\n\n\n\n\n\n\n\nSpeaker notes go here."
+  },
+  {
+    "objectID": "heigit_presentation.html#exposed-area",
+    "href": "heigit_presentation.html#exposed-area",
+    "title": "Network Centrality and Resilience to Flood Disasters",
+    "section": "Exposed area",
+    "text": "Exposed area"
+  },
+  {
+    "objectID": "heigit_presentation.html#graph-theory",
+    "href": "heigit_presentation.html#graph-theory",
+    "title": "Network Centrality and Resilience to Flood Disasters",
+    "section": "Graph theory",
+    "text": "Graph theory\nFrom OSM geometric to ORS graph\n\n\nSpeaker notes go here."
+  },
+  {
+    "objectID": "heigit_presentation.html#conceptual-design",
+    "href": "heigit_presentation.html#conceptual-design",
+    "title": "Network Centrality and Resilience to Flood Disasters",
+    "section": "Conceptual design",
+    "text": "Conceptual design"
   },
   {
     "objectID": "heigit_presentation.html#research-questions",
@@ -21,6 +49,13 @@
     "text": "Data"
   },
   {
+    "objectID": "heigit_presentation.html#technical-design",
+    "href": "heigit_presentation.html#technical-design",
+    "title": "Network Centrality and Resilience to Flood Disasters",
+    "section": "Technical design",
+    "text": "Technical design"
+  },
+  {
     "objectID": "heigit_presentation.html#edge-betweenness",
     "href": "heigit_presentation.html#edge-betweenness",
     "title": "Network Centrality and Resilience to Flood Disasters",
@@ -35,45 +70,31 @@
     "text": "Closeness\n\n\n\n\nHow central to other vertices is a vertex\n\\[\n\\text{CN}(v) = \\frac{n - 1}{\\sum_{w = 1}^{n - 1} d(w, v)}\n\\]"
   },
   {
-    "objectID": "heigit_presentation.html#origin-destination",
-    "href": "heigit_presentation.html#origin-destination",
+    "objectID": "heigit_presentation.html#rq-1-network-centrality-distribution",
+    "href": "heigit_presentation.html#rq-1-network-centrality-distribution",
     "title": "Network Centrality and Resilience to Flood Disasters",
-    "section": "Origin-Destination",
-    "text": "Origin-Destination\nOrigin and destination based on density of buildings"
+    "section": "RQ 1: Network centrality distribution",
+    "text": "RQ 1: Network centrality distribution"
   },
   {
-    "objectID": "heigit_presentation.html#rq-1-network-centrality",
-    "href": "heigit_presentation.html#rq-1-network-centrality",
+    "objectID": "heigit_presentation.html#network-centrality-location",
+    "href": "heigit_presentation.html#network-centrality-location",
     "title": "Network Centrality and Resilience to Flood Disasters",
-    "section": "RQ 1: Network centrality",
-    "text": "RQ 1: Network centrality\nChanges on the centrality before and after the flooding"
+    "section": "Network centrality location",
+    "text": "Network centrality location\nChanges on the centrality before and after the flooding"
   },
   {
-    "objectID": "heigit_presentation.html#rq-1-network-centrality-1",
-    "href": "heigit_presentation.html#rq-1-network-centrality-1",
+    "objectID": "heigit_presentation.html#rq-1-network-centrality-values",
+    "href": "heigit_presentation.html#rq-1-network-centrality-values",
     "title": "Network Centrality and Resilience to Flood Disasters",
-    "section": "RQ 1: Network centrality",
-    "text": "RQ 1: Network centrality\nDistribution of the centrality in the network"
+    "section": "RQ 1: Network centrality values",
+    "text": "RQ 1: Network centrality values\nTable with highest connectivity roads"
   },
   {
-    "objectID": "heigit_presentation.html#rq-1-network-centrality-2",
-    "href": "heigit_presentation.html#rq-1-network-centrality-2",
+    "objectID": "heigit_presentation.html#rq1-hospital-centrality---ranking",
+    "href": "heigit_presentation.html#rq1-hospital-centrality---ranking",
     "title": "Network Centrality and Resilience to Flood Disasters",
-    "section": "RQ 1: Network centrality",
-    "text": "RQ 1: Network centrality\nTable with highest connectivity roads"
-  },
-  {
-    "objectID": "heigit_presentation.html#rq-2-hospital-centrality---map",
-    "href": "heigit_presentation.html#rq-2-hospital-centrality---map",
-    "title": "Network Centrality and Resilience to Flood Disasters",
-    "section": "RQ 2: Hospital centrality - map",
-    "text": "RQ 2: Hospital centrality - map"
-  },
-  {
-    "objectID": "heigit_presentation.html#rq-2-hospital-centrality---ranking",
-    "href": "heigit_presentation.html#rq-2-hospital-centrality---ranking",
-    "title": "Network Centrality and Resilience to Flood Disasters",
-    "section": "RQ 2: Hospital centrality - ranking",
-    "text": "RQ 2: Hospital centrality - ranking"
+    "section": "RQ1: Hospital centrality - ranking",
+    "text": "RQ1: Hospital centrality - ranking"
   }
 ]
